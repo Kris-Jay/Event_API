@@ -1,0 +1,36 @@
+<li class="list-item">
+  <div class="event-container">
+    <a class="img-container" href="{{ eventRef.url }}">
+      <img class="images" src="{{ eventRef.images[2].url }}"
+    /></a>
+    <div class="titleInfo">
+      <p class="eventP">
+        {{ eventRef.name }}
+      </p>
+      <p>Date:{{ eventRef.dates.start.localDate }}</p>
+    </div>
+
+    <img
+      *ngIf="!eventRef.favorite"
+      class="unclicked"
+      src="/assets/UnclickedFlame.svg"
+      alt=""
+      (click)="toggleFavorite(eventRef)"
+    />
+    <img
+      *ngIf="eventRef.favorite"
+      class="fire-logo"
+      src="/assets/flame.gif"
+      alt=""
+      (click)="toggleFavorite(eventRef)"
+    />
+    <i class="fas fa-caret-down" (click)="moreInfo = !moreInfo"></i>
+    <a href="{{ eventRef.url }}"
+      ><img class="ticket" src="/assets/Tickets.svg" alt=""
+    /></a>
+  </div>
+  <div class="event-info" [class.drop-down]="!moreInfo">
+    <p>Venue:{{ eventRef._embedded.venues[0].name }}</p>
+    <p>Details:{{ eventRef.info }}</p>
+  </div>
+</li>

@@ -1,0 +1,23 @@
+.div-container {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 100px;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div-container {
+  margin: auto;
+}
+
+.search-bar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
+}

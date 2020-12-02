@@ -1,0 +1,74 @@
+.images {
+  width: 400px;
+  height: 400px;
+  border-right: solid black 70px;
+  border-left: solid black 5px;
+  border-bottom: solid black 5px;
+  border-top: solid black 5px;
+}
+
+.images:hover {
+  box-shadow: 5px 5px 10px white;
+  transition: 0.2s;
+}
+.event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  position: relative;
+}
+
+.fa-fire {
+  color: white;
+}
+
+.list-item {
+  list-style: none;
+  width: 500px;
+}
+
+.fire-logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 424px;
+  right: 0px;
+  font-size: 70px;
+}
+
+.unclicked {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 424px;
+  right: 20px;
+}
+
+.eventP {
+  font-size: 20px;
+}
+
+.fa-caret-down {
+  font-size: 60px;
+  position: absolute;
+  bottom: 181px;
+  right: 30px;
+}
+
+.drop-down {
+  display: none;
+}
+
+.titleInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ticket {
+  height: 60px;
+  position: absolute;
+  bottom: 306px;
+  right: 20px;
+}

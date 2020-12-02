@@ -1,0 +1,40 @@
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: #86bbdf;
+}
+
+#term {
+  height: 40px;
+  width: 175px;
+  border-radius: 10px;
+}
+
+.search-button {
+  height: 46px;
+  border-radius: 10px;
+}
+
+.link:hover {
+  color: rgb(40, 137, 194);
+}
+
+.search-button:hover {
+  background-color: rgb(40, 137, 194);
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #term {
+    height: 40px;
+    width: 375px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+<div class="div-container">
+  <ul class="event-container">
+    <app-event
+      *ngFor="let event of eventData?._embedded.events"
+      [eventRef]="event"
+      (favoriteEvent)="toggleFavorite($event)"
+    ></app-event>
+  </ul>
+</div>
+<app-search-criteria class="search-bar"></app-search-criteria>

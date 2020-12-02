@@ -1,0 +1,68 @@
+.favorite-container {
+  margin-bottom: 100px;
+}
+
+.fa-dumpster-fire {
+  font-size: 30px;
+  top: 35px;
+  right: -54px;
+  position: absolute;
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  border-right: solid black 60px;
+  border-left: solid black 5px;
+  border-bottom: solid black 5px;
+  border-top: solid black 5px;
+}
+
+.favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.event-container {
+  display: flex;
+  width: 300px;
+  margin: 40px;
+  position: relative;
+}
+
+.eventP {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
+}
+
+.fa-caret-down {
+  font-size: 60px;
+  position: absolute;
+  bottom: 130px;
+  right: -53px;
+}
+
+.drop-down {
+  display: none;
+}
+
+.event-info {
+  position: absolute;
+  bottom: -75px;
+}
+
+.ticket {
+  height: 60px;
+  position: absolute;
+  top: 123px;
+  right: -65px;
+}

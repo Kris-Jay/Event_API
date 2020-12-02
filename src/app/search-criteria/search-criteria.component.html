@@ -1,0 +1,15 @@
+<nav class="nav-list">
+  <a class="link" routerLink="/home">Home</a>
+  <form #searchForm="ngForm" (ngSubmit)="getSearchTerm(searchForm)">
+    <input
+      type="text"
+      name="term"
+      id="term"
+      placeholder="Not sure? Click 'find event' and we'll find something for you!"
+      ngModel
+    />
+    <button class="search-button">Find Event</button>
+  </form>
+
+  <a class="link" routerLink="/bucket-list">Bucket List</a>
+</nav>

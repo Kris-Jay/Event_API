@@ -1,0 +1,19 @@
+<div class="favorite-container">
+  <ul class="event-container" *ngFor="let favorite of favorites; index as i">
+    <i class="fas fa-caret-down" (click)="setShowIndex(i)"></i>
+    <li class="eventP">
+      <img class="img-container" src="{{ favorite.img }}" alt="eventImage" />
+      <p>{{ favorite.title }}</p>
+      <p>{{ favorite.date }}</p>
+      <i class="fas fa-dumpster-fire" (click)="toggleFavorite(favorite)"></i>
+      <a href="{{ favorite.url }}"
+        ><img class="ticket" src="/assets/Tickets.svg" alt=""
+      /></a>
+    </li>
+    <div class="event-info" *ngIf="showIndex === i">
+      <p>Venue:{{ favorite.venue }}</p>
+      <p>Details:{{ favorite.detail }}</p>
+    </div>
+  </ul>
+</div>
+<app-search-criteria class="search-bar"></app-search-criteria>
